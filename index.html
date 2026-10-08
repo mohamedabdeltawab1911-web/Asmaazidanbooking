@@ -8,6 +8,15 @@
   <meta property="og:title" content="د. أسماء زيدان | تغذية علاجية وعافية">
   <meta property="og:description" content="خطة ومتابعة تناسب احتياجك — احجزي كشفك أو باقتك الآن.">
   <title>د. أسماء زيدان | تغذية علاجية وعافية</title>
+  <!-- TikTok Pixel -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+  ttq.load('DB3QK43C77U04C8M7FE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- End TikTok Pixel -->
   <style>
     :root{--gold:#FFC253;--gold-2:#EFC373;--cream:#FFE5B5;--ink:#29271F;--muted:#716B5D;--paper:#FFFDF8;--white:#fff;--line:#E9DFCB;--soft:#FFF7E8;--green:#596744;--danger:#A52D24;--shadow:0 22px 60px rgba(75,55,18,.11);--radius:24px}
     *{box-sizing:border-box}
@@ -361,6 +370,7 @@
       if (CONFIG.META_PIXEL_ID && CONFIG.META_PIXEL_ID.trim() && typeof window.fbq === "function") {
         window.fbq("track", "Lead");
       }
+      if (window.ttq) { try { window.ttq.track("SubmitForm"); } catch (e) {} }
     }
     function clinicInfo(branchKey){ return BRANCHES[branchKey] || null; }
     function setBranchUi(form, branchKey, mode){
